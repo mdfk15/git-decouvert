@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>TP GIT - ADRAR</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+* {
+  box-sizing: border-box;
+}
+
+/* Style the body */
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  margin: 0;
+}
+
+/* Header/logo Title */
+.header {
+  padding: 80px;
+  text-align: center;
+  background: #1abc9c;
+  color: white;
+}
+
+/* Increase the font size of the heading */
+.header h1 {
+  font-size: 40px;
+}
+
+/* Style the top navigation bar */
+.navbar {
+  overflow: hidden;
+  background-color: #333;
+}
+
+/* Style the navigation bar links */
+.navbar a {
+  float: left;
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 20px;
+  text-decoration: none;
+}
+
+/* Right-aligned link */
+.navbar a.right {
+  float: right;
+}
+
+/* Change color on hover */
+.navbar a:hover {
+  background-color: #ddd;
+  color: black;
+}
+
+/* Column container */
+.row {  
+  display: -ms-flexbox; /* IE10 */
+  display: flex;
+  -ms-flex-wrap: wrap; /* IE10 */
+  flex-wrap: wrap;
+}
+
+/* Create two unequal columns that sits next to each other */
+/* Sidebar/left column */
+.side {
+  -ms-flex: 30%; /* IE10 */
+  flex: 30%;
+  background-color: #f1f1f1;
+  padding: 20px;
+}
+
+/* Main column */
+.main {   
+  -ms-flex: 70%; /* IE10 */
+  flex: 70%;
+  background-color: white;
+  padding: 20px;
+}
+
+/* Fake image, just for this example */
+.fakeimg {
+  background-color: #aaa;
+  width: 100%;
+  padding: 15px;
+  border-radius: .35rem;
+}
+
+.blason {
+  background-color: none;
+}
+
+/* Footer */
+.footer {
+  padding: 20px;
+  text-align: center;
+  background: #ddd;
+}
+
+/* Responsive layout - when the screen is less than 700px wide, make the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 700px) {
+  .row {   
+    flex-direction: column;
+  }
+}
+
+/* Responsive layout - when the screen is less than 400px wide, make the navigation links stack on top of each other instead of next to each other */
+@media screen and (max-width: 400px) {
+  .navbar a {
+    float: none;
+    width: 100%;
+  }
+}
+</style>
+  <link rel="icon" type="image/png" size="60x60" href="image/logo.png">
+</head>
+<body>
+
+<div class="header">
+  <h1>MTBE Site Web</h1>
+  <p>A website created for a PfSense TP.</p>
+</div>
+
+<div class="navbar">
+  <a href="#">About</a>
+  <a href="#">Consigne</a>
+  <a href="#">Resources</a>
+  <a href="#" class="right">Notes</a>
+</div>
+
+<div class="row">
+  <div class="side">
+    <center>
+    <h2>Cerber Security Team</h2>
+    <h5>TSSR ERN 2401</h5>
+    <div class="blason">
+      <img src="image/logo.png" alt="image" style="min-width:100%;"/>
+    </div>
+    </center>
+    <h3>TP Decouvert GIT</h3>
+    <p>Cheat sheet (commandes &agrave; utiliser): </p>
+    <div class="fakeimg" style="height:60px;"><code>mkdir (Cr&eacute;er un dossier)</code></div><br>
+    <div class="fakeimg" style="height:60px;"><code>ls (Lister contenu d'un dossier)</code></div><br>
+    <div class="fakeimg" style="height:60px;"><code>echo (Imprimer un message)</code></div><br>
+    <div class="fakeimg" style="height:60px;"><code>cat (Imprimer contenu d'un fichier)</code></div><br>
+    <div class="fakeimg" style="height:60px;"><code>vim (Editeur des fichiers)</code></div><br>
+    <div class="fakeimg" style="height:60px;"><code>touch (Cr&eacute;er un fichier)</code></div><br>
+    <div class="fakeimg" style="height:60px;"><code>mv (Renomer/Deplacer un fichier ou dossier)</code></div><br>
+    <div class="fakeimg" style="height:60px;"><code>git (Outil pour vertionner)</code></div><br>
+  </div>
+  <div class="main">
+    <h2>1. Arborenscense du projet</h2>
+    <h5>Cr&eacute;ation sur ligne de commandes</h5>
+    <div class="fakeimg" style="height:auto; width: fit-content">
+      <pre>$ mkdir bash
+$ cd bash/
+$ mkdir asset
+$ cd asset
+$ mkdir css js images
+$ cd ..
+$ touch index.html
+$ touch asset/js/script.js asset/css/main.css asset/images/profil.png</pre>
+    </div>
+    <p>Description de la réalisation de la consigne</p>
+    <p>Conclusion/Observations: Sunt in culpa qui officia deserunt mollit anim id est laborum consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco.</p>
+    <br>
+    <h2>2. HTML</h2>
+    <h5>Copier code site HTML sur index.html</h5>
+    <div class="fakeimg" style="height:auto; width: fit-content">
+      <pre>&lt;!DOCTYPE html&gt;
+&lt;html lang="fr"&gt;
+&lt;head&gt;
+    &lt;meta charset="UTF-8"&gt;
+    &lt;meta name="viewport" content="width=device-width, initial-scale=1.0"&gt;
+    &lt;title&gt;Mon profil&lt;/title&gt;
+&lt;/head&gt;
+&lt;body&gt;
+    &lt;h1&gt;Bienvenue sur mon super site&lt;/h1&gt;
+&lt;/body&gt;
+&lt;/html&gt;</pre>
+    </div>
+    <p>Le code ci-dessus est un simple code en HTML &agrave; afficher dans le site du TP.</p>
+    <p>Conclusion/Observations: Sunt in culpa qui officia deserunt mollit anim id est laborum consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco.</p>
+    <br>
+    <h2>3. Compte GitHub</h2>
+    <h5>Cr&eacute;ation sur site</h5>
+    <div class="fakeimg" style="height:auto; width:fit-content;"><img src="https://pngteam.com/images/github-png-1125x417_114ac1c1_transparent_2025a9.png.png" alt="github"></div>
+    <p>Description de la réalisation de la consigne</p>
+    <p>Conclusion/Observations: Sunt in culpa qui officia deserunt mollit anim id est laborum consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco.</p>
+    <br>
+    <h2>4. Premier projet</h2>
+    <h5>Commandes de bases Git</h5>
+    <div class="fakeimg" style="height:200px;">Image</div>
+    <p>Description de la réalisation de la consigne</p>
+    <p>Conclusion/Observations: Sunt in culpa qui officia deserunt mollit anim id est laborum consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco.</p>
+  </div>
+</div>
+
+<div class="footer">
+  <h2>Cristian M. BERNAL</h2>
+</div>
+
+</body>
+</html>
