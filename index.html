@@ -159,7 +159,7 @@ code {
   </div>
   <div class="main">
     <h2>1. Arborenscense du projet</h2>
-    <h5>Cr&eacute;ation sur ligne de commandes</h5>
+    <h3>Cr&eacute;ation sur ligne de commandes</h3>
     <div class="fakeimg" style="height:auto; width: fit-content; min-width:400px;">
       <pre>$ mkdir bash
 $ cd bash/
@@ -174,7 +174,7 @@ $ touch asset/js/script.js asset/css/main.css asset/images/profil.png</pre>
     <p>Ces dossiers, sous-dossiers et fichiers seront les bases de notre projet pour la pratique de Git.</p>
     <br>
     <h2>2. HTML</h2>
-    <h5>Code site HTML</h5>
+    <h3>Code site HTML</h3>
     <div class="fakeimg" style="height:auto; width: fit-content; min-width:400px;">
       <pre>&lt;!DOCTYPE html&gt;
 &lt;html lang="fr"&gt;
@@ -192,7 +192,7 @@ $ touch asset/js/script.js asset/css/main.css asset/images/profil.png</pre>
     <p>Le code ci-dessus est un simple code en HTML &agrave; afficher dans le site du TP.</p>
     <br>
     <h2>3. Compte GitHub</h2>
-    <h5>Cr&eacute;ation sur <a href="https://github.com/" target="_blank">GitHub</a></h5>
+    <h3>Cr&eacute;ation sur <a href="https://github.com/" target="_blank">GitHub</a></h3>
     <div class="fakeimg" style="height:auto; width:fit-content; min-width:400px;"><a href="https://github.com/" target="_blank">
       <img src="https://logos-world.net/wp-content/uploads/2020/11/GitHub-Logo-700x394.png" alt="github">
     </a></div>
@@ -200,7 +200,7 @@ $ touch asset/js/script.js asset/css/main.css asset/images/profil.png</pre>
     <p>La platform GitHub nous permitira h&eacute;berger notre projet et disposer d'un &eacute;cosyst&egrave;mes des outils pour travailler le projet de mani&egrave;re collaboratif,&nbsp; automatis&eacute; et surtout centralis&eacute;.</p>
     <br>
     <h2>4. Git configuration</h2>
-    <h5>&Agrave; r&eacute;aliser avant la premi&egrave;re utilisation</h5>
+    <h3>&Agrave; r&eacute;aliser avant la premi&egrave;re utilisation</h3>
     <div class="fakeimg" style="height:auto; width:fit-content; min-width:400px;">
       <pre>$ git config --global user.name "nom_utilisateur"
 $ git config --global user.email "mail_utilisateur"</pre>
@@ -210,7 +210,7 @@ $ git config --global user.email "mail_utilisateur"</pre>
     Plusieurs peuvent &ecirc;tres li&eacute;es avec l'option <code>--local</code> pour r&eacute;aliser un configuration par utilisateur.</p>
     <br>
     <h2>5. Premier projet</h2>
-    <h5>Commandes de bases Git</h5>
+    <h3>Commandes de bases Git</h3>
     <div class="fakeimg" style="height:auto; width:fit-content; min-width:400px;">
       <pre>$ git init</pre>
     </div>
@@ -232,6 +232,25 @@ $ git config --global user.email "mail_utilisateur"</pre>
     </div>
     <p>L'historique des versions s'imprime avec l'option <code>log</code>. Une liste avec descriptions, identifiants uniques et d'autres d&eacute;tails sera fournie.</p>
     <p>D'autres options peuvent &ecirc;tre mis en place mais les principales &eacute;l&eacute;ments ont &eacute;t&eacute; d&eacute;crits dans ce r&eacute;sum&eacute; pour avoir un id&eacute;e g&eacute;n&eacute;rale de comment travailler avec Git et suppl&eacute;mentairement GitHub pour son h&eacute;bergement.</p>
+    <h2>6. D&eacute;p&ocirc;t GitHub</h2>
+    <h4>Cr&eacute;er le d&eacute;p&ocirc;t comme indiqu&eacute; sur <a href="https://docs.github.com/fr/repositories/creating-and-managing-repositories/creating-a-new-repository" target="_blanc">GitHub</a>.</h4>
+    <div class="fakeimg" style="height:auto; width:fit-content; min-width:400px;">
+      <pre>$ git remote add "origin" "github-repository-link"</pre>
+    </div>
+    <p>Remplacer <code>origin</code> avec un alias &agrave; votre choix et <code>github-repository-link</code> avec le lien du d&eacute;p&ocirc;t fournie lors de sa cr&eacute;ation.</p>
+    <p>On indiquera &agrave; git de mani&egrave;re locale quel sera le d&eacute;p&ocirc;t &agrave; vinvuler.</p>
+    <h3>&Agrave; partir d'un projet local vide</h3>
+    <div class="fakeimg" style="height:auto; width:fit-content; min-width:400px;">
+      <pre>$ git pull origin main</pre>
+    </div>
+    <p>Notez que <code>origin</code> est l'alias pr&eacute;c&eacute;dement cr&eacute;e et <code>main</code> la branch dans le projet locale, v&eacute;rifier que ça correspond.</p>
+    <p>Le contenu locale sera mis &agrave; jour gr&acirc;ce &agrave; l'option <code>pull</code> qui t&eacute;l&eacute;charge depuis le serveur GitHub tous les changements.</p>
+    <h3>&Agrave; partir d'un projet (d&eacute;p&ocirc;t) GitHub vide</h3>
+    <div class="fakeimg" style="height:auto; width:fit-content; min-width:400px;">
+      <pre>$ git push origin main</pre>
+    </div>
+    <p>L'option <code>push</code> envoyera les modifications locales vers le serveur de l'alias <code>origin</code> dans la branch <code>main</code>.</p>
+    <p>Le d&eacute;p&ocirc;t est maintenant &agrave; jour par rapport &agrave; toutes vos modifications locales.</p>
   </div>
 </div>
 
