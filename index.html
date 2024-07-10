@@ -136,19 +136,19 @@ body {
     <h2>Cerber Security Team</h2>
     <h5>TSSR ERN 2401</h5>
     <div class="blason">
-      <img src="image/logo.png" alt="image" style="min-width:100%;"/>
+      <img src="image/logo.png" alt="image" style="max-width:700px;"/>
     </div>
     </center>
     <h3>TP Decouvert GIT</h3>
     <p>Cheat sheet (commandes &agrave; utiliser): </p>
-    <div class="fakeimg" style="height:60px;"><code>mkdir (Cr&eacute;er un dossier)</code></div><br>
-    <div class="fakeimg" style="height:60px;"><code>ls (Lister contenu d'un dossier)</code></div><br>
-    <div class="fakeimg" style="height:60px;"><code>echo (Imprimer un message)</code></div><br>
-    <div class="fakeimg" style="height:60px;"><code>cat (Imprimer contenu d'un fichier)</code></div><br>
-    <div class="fakeimg" style="height:60px;"><code>vim (Editeur des fichiers)</code></div><br>
-    <div class="fakeimg" style="height:60px;"><code>touch (Cr&eacute;er un fichier)</code></div><br>
-    <div class="fakeimg" style="height:60px;"><code>mv (Renomer/Deplacer un fichier ou dossier)</code></div><br>
-    <div class="fakeimg" style="height:60px;"><code>git (Outil pour vertionner)</code></div><br>
+    <div class="fakeimg" style="height:60px;"><code>$ mkdir (Cr&eacute;er un dossier)</code></div><br>
+    <div class="fakeimg" style="height:60px;"><code>$ ls (Lister contenu d'un dossier)</code></div><br>
+    <div class="fakeimg" style="height:60px;"><code>$ echo (Imprimer un message)</code></div><br>
+    <div class="fakeimg" style="height:60px;"><code>$ cat (Imprimer contenu d'un fichier)</code></div><br>
+    <div class="fakeimg" style="height:60px;"><code>$ vim (Editeur des fichiers)</code></div><br>
+    <div class="fakeimg" style="height:60px;"><code>$ touch (Cr&eacute;er un fichier)</code></div><br>
+    <div class="fakeimg" style="height:60px;"><code>$ mv (Renomer/Deplacer un fichier ou dossier)</code></div><br>
+    <div class="fakeimg" style="height:60px;"><code>$ git (Outil pour vertionner)</code></div><br>
   </div>
   <div class="main">
     <h2>1. Arborenscense du projet</h2>
@@ -185,15 +185,35 @@ $ touch asset/js/script.js asset/css/main.css asset/images/profil.png</pre>
     <p>Conclusion/Observations: Sunt in culpa qui officia deserunt mollit anim id est laborum consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco.</p>
     <br>
     <h2>3. Compte GitHub</h2>
-    <h5>Cr&eacute;ation sur site</h5>
-    <div class="fakeimg" style="height:auto; width:fit-content;"><img src="https://pngteam.com/images/github-png-1125x417_114ac1c1_transparent_2025a9.png.png" alt="github"></div>
+    <h5>Cr&eacute;ation sur <a href="https://github.com/" target="_blank">GitHub</a></h5>
+    <div class="fakeimg" style="height:auto; width:fit-content;"><a href="https://github.com/" target="_blank">
+      <img src="https://logos-world.net/wp-content/uploads/2020/11/GitHub-Logo-700x394.png" alt="github">
+    </a></div>
     <p>Description de la réalisation de la consigne</p>
     <p>Conclusion/Observations: Sunt in culpa qui officia deserunt mollit anim id est laborum consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco.</p>
     <br>
-    <h2>4. Premier projet</h2>
+    <h2>4. Git configuration</h2>
+    <h5>&Agrave; r&eacute;aliser avant la premi&egrave;re utilisation</h5>
+    <div class="fakeimg" style="height:auto; width:fit-content;">
+      <pre>$ git config --global user.name "nom_utilisateur"
+$ git config --global user.email "mail_utilisateur"</pre>
+    </div>
+    <p>Changer <code>nom_utilisateur</code> pour votre nom d'utilisateur et <code>mail_utilisateur</code> avec le mail li&eacute;e &agrave; la compte GitHub</p>
+    <p>Conclusion/Observations: Sunt in culpa qui officia deserunt mollit anim id est laborum consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco.</p>
+    <br>
+    <h2>5. Premier projet</h2>
     <h5>Commandes de bases Git</h5>
-    <div class="fakeimg" style="height:200px;">Image</div>
-    <p>Description de la réalisation de la consigne</p>
+    <div class="fakeimg" style="height:auto; width:fit-content;">
+      <pre>$ git init
+$ git status
+$ mkdir asset
+$ cd asset
+$ mkdir css js images
+$ cd ..
+$ touch index.html
+$ touch asset/js/script.js asset/css/main.css asset/images/profil.png</pre>
+    </div>
+    <p><code>git init</code> initialisera un projet pour vertionner dans le dossier.</p>
     <p>Conclusion/Observations: Sunt in culpa qui officia deserunt mollit anim id est laborum consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco.</p>
   </div>
 </div>
