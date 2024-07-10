@@ -113,6 +113,13 @@ body {
     width: 100%;
   }
 }
+
+code {
+  background-color: #f1f1f1;
+  padding: 2px;
+  font-size: 110%;
+}
+
 </style>
   <link rel="icon" type="image/png" size="60x60" href="image/logo.png">
 </head>
@@ -141,19 +148,19 @@ body {
     </center>
     <h3>TP Decouvert GIT</h3>
     <p>Cheat sheet (commandes &agrave; utiliser): </p>
-    <div class="fakeimg" style="height:60px;"><code>$ mkdir (Cr&eacute;er un dossier)</code></div><br>
-    <div class="fakeimg" style="height:60px;"><code>$ ls (Lister contenu d'un dossier)</code></div><br>
-    <div class="fakeimg" style="height:60px;"><code>$ echo (Imprimer un message)</code></div><br>
-    <div class="fakeimg" style="height:60px;"><code>$ cat (Imprimer contenu d'un fichier)</code></div><br>
-    <div class="fakeimg" style="height:60px;"><code>$ vim (Editeur des fichiers)</code></div><br>
-    <div class="fakeimg" style="height:60px;"><code>$ touch (Cr&eacute;er un fichier)</code></div><br>
-    <div class="fakeimg" style="height:60px;"><code>$ mv (Renomer/Deplacer un fichier ou dossier)</code></div><br>
-    <div class="fakeimg" style="height:60px;"><code>$ git (Outil pour vertionner)</code></div><br>
+    <div class="fakeimg" style="height:60px;"><pre>$ mkdir (Cr&eacute;er un dossier)</pre></div><br>
+    <div class="fakeimg" style="height:60px;"><pre>$ ls (Lister contenu d'un dossier)</pre></div><br>
+    <div class="fakeimg" style="height:60px;"><pre>$ echo (Imprimer un message)</pre></div><br>
+    <div class="fakeimg" style="height:60px;"><pre>$ cat (Imprimer contenu d'un fichier)</pre></div><br>
+    <div class="fakeimg" style="height:60px;"><pre>$ vim (Editeur des fichiers)</pre></div><br>
+    <div class="fakeimg" style="height:60px;"><pre>$ touch (Cr&eacute;er un fichier)</pre></div><br>
+    <div class="fakeimg" style="height:60px;"><pre>$ mv (Renomer/Deplacer un fichier ou dossier)</pre></div><br>
+    <div class="fakeimg" style="height:60px;"><pre>$ git (Outil pour vertionner)</pre></div><br>
   </div>
   <div class="main">
     <h2>1. Arborenscense du projet</h2>
     <h5>Cr&eacute;ation sur ligne de commandes</h5>
-    <div class="fakeimg" style="height:auto; width: fit-content">
+    <div class="fakeimg" style="height:auto; width: fit-content; min-width:400px;">
       <pre>$ mkdir bash
 $ cd bash/
 $ mkdir asset
@@ -163,12 +170,12 @@ $ cd ..
 $ touch index.html
 $ touch asset/js/script.js asset/css/main.css asset/images/profil.png</pre>
     </div>
-    <p>Description de la réalisation de la consigne</p>
-    <p>Conclusion/Observations: Sunt in culpa qui officia deserunt mollit anim id est laborum consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco.</p>
+    <p>Les commandes principales de <code>bash</code> vous aiderons &agrave; cr&eacute;er tout dossier et fichiers.</p>
+    <p>Ces dossiers, sous-dossiers et fichiers seront les bases de notre projet pour la pratique de Git.</p>
     <br>
     <h2>2. HTML</h2>
-    <h5>Copier code site HTML sur index.html</h5>
-    <div class="fakeimg" style="height:auto; width: fit-content">
+    <h5>Code site HTML</h5>
+    <div class="fakeimg" style="height:auto; width: fit-content; min-width:400px;">
       <pre>&lt;!DOCTYPE html&gt;
 &lt;html lang="fr"&gt;
 &lt;head&gt;
@@ -181,40 +188,50 @@ $ touch asset/js/script.js asset/css/main.css asset/images/profil.png</pre>
 &lt;/body&gt;
 &lt;/html&gt;</pre>
     </div>
+    <p>Copier le code et coller sur le fichier index.html</p>
     <p>Le code ci-dessus est un simple code en HTML &agrave; afficher dans le site du TP.</p>
-    <p>Conclusion/Observations: Sunt in culpa qui officia deserunt mollit anim id est laborum consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco.</p>
     <br>
     <h2>3. Compte GitHub</h2>
     <h5>Cr&eacute;ation sur <a href="https://github.com/" target="_blank">GitHub</a></h5>
-    <div class="fakeimg" style="height:auto; width:fit-content;"><a href="https://github.com/" target="_blank">
+    <div class="fakeimg" style="height:auto; width:fit-content; min-width:400px;"><a href="https://github.com/" target="_blank">
       <img src="https://logos-world.net/wp-content/uploads/2020/11/GitHub-Logo-700x394.png" alt="github">
     </a></div>
-    <p>Description de la réalisation de la consigne</p>
-    <p>Conclusion/Observations: Sunt in culpa qui officia deserunt mollit anim id est laborum consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco.</p>
+    <p>Suivre les &eacute;tapes sur site pour l'enregistrement de votre compte.</p>
+    <p>La platform GitHub nous permitira h&eacute;berger notre projet et disposer d'un &eacute;cosyst&egrave;mes des outils pour travailler le projet de mani&egrave;re collaboratif,&nbsp; automatis&eacute; et surtout centralis&eacute;.</p>
     <br>
     <h2>4. Git configuration</h2>
     <h5>&Agrave; r&eacute;aliser avant la premi&egrave;re utilisation</h5>
-    <div class="fakeimg" style="height:auto; width:fit-content;">
+    <div class="fakeimg" style="height:auto; width:fit-content; min-width:400px;">
       <pre>$ git config --global user.name "nom_utilisateur"
 $ git config --global user.email "mail_utilisateur"</pre>
     </div>
     <p>Changer <code>nom_utilisateur</code> pour votre nom d'utilisateur et <code>mail_utilisateur</code> avec le mail li&eacute;e &agrave; la compte GitHub</p>
-    <p>Conclusion/Observations: Sunt in culpa qui officia deserunt mollit anim id est laborum consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco.</p>
+    <p>Git est un outil collaboratif qui a besoin de d&eacute;terminer qui sera l'utilisateur dans l'ordinateur, afin d'indentifier les modidication r&eacute;alis&eacute;es.
+    Plusieurs peuvent &ecirc;tres li&eacute;es avec l'option <code>--local</code> pour r&eacute;aliser un configuration par utilisateur.</p>
     <br>
     <h2>5. Premier projet</h2>
     <h5>Commandes de bases Git</h5>
-    <div class="fakeimg" style="height:auto; width:fit-content;">
-      <pre>$ git init
-$ git status
-$ mkdir asset
-$ cd asset
-$ mkdir css js images
-$ cd ..
-$ touch index.html
-$ touch asset/js/script.js asset/css/main.css asset/images/profil.png</pre>
+    <div class="fakeimg" style="height:auto; width:fit-content; min-width:400px;">
+      <pre>$ git init</pre>
     </div>
-    <p><code>git init</code> initialisera un projet pour vertionner dans le dossier.</p>
-    <p>Conclusion/Observations: Sunt in culpa qui officia deserunt mollit anim id est laborum consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco.</p>
+    <p>L'option <code>init</code> initialisera le projet &agrave; vertionner dans le dossier.</p>
+    <div class="fakeimg" style="height:auto; width:fit-content; min-width:400px;">
+      <pre>$ git add .</pre>
+    </div>
+    <p>Une fois initialis&eacute;, l'option <code>add . (ou */-A/"nom-de-fichier")</code> ajoutera les nouveaux fichier ou ses modifications au stage du projet.</p>
+    <div class="fakeimg" style="height:auto; width:fit-content; min-width:400px;">
+      <pre>$ git status</pre>
+    </div>
+    <p>L'option <code>status</code> imprimera l'&eacute;tat du projet. Les modification ou nouveaux fichiers seront visibles &agrave; cette &eacute;tape.</p>
+    <div class="fakeimg" style="height:auto; width:fit-content; min-width:400px;">
+      <pre>$ git commit -m "message description du commit"</pre>
+    </div>
+    <p>La savegarde se r&eacute;alise avec l'option <code>commit</code> et l'option <code>-m "message descriptif"</code> fournie la description respectif aux modifications. Tout sera ajout&eacute; &agrave; l'historique.</p>
+    <div class="fakeimg" style="height:auto; width:fit-content; min-width:400px;">
+      <pre>$ git log</pre>
+    </div>
+    <p>L'historique des versions s'imprime avec l'option <code>log</code>. Une liste avec descriptions, identifiants uniques et d'autres d&eacute;tails sera fournie.</p>
+    <p>D'autres options peuvent &ecirc;tre mis en place mais les principales &eacute;l&eacute;ments ont &eacute;t&eacute; d&eacute;crits dans ce r&eacute;sum&eacute; pour avoir un id&eacute;e g&eacute;n&eacute;rale de comment travailler avec Git et suppl&eacute;mentairement GitHub pour son h&eacute;bergement.</p>
   </div>
 </div>
 
